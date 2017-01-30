@@ -1,0 +1,269 @@
+#container {
+    height: 400px;
+    width: 320px;
+    border: solid black 2px;
+    position: relative;
+    float: left;
+}
+
+.canvas-container {
+    position: absolute;
+}
+
+#container2 {
+    height: 400px;
+    width: 320px;
+    border: solid black 2px;
+    position: relative;
+    float: left;
+}
+
+#container3 {
+    height: 400px;
+    width: 320px;
+    border: solid black 2px;
+    position: relative;
+    float: left;
+}
+
+#cnvs {
+    height: 400px;
+    width: 320px;
+    border: solid green 1px;
+    /*margin: 0 auto;*/
+    z-index: 1;
+    position: absolute;
+}
+
+#container #button-effects {
+    height: 30px;
+    width: 75px;
+    border: solid red 1px;
+    /*background-color: blue;*/
+    margin-top: 355px;
+    margin-left: 5px;
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+#container #button-accessories {
+    height: 30px;
+    width: 110px;
+    border: solid red 1px;
+    /*background-color: blue;*/
+    margin-top: 355px;
+    margin-left: 85px;
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+#container #tempbox {
+    height: 280px;
+    width: 190px;
+    border: solid red 1px;
+    /*background-color: blue;*/
+    margin-top: 70px;
+    margin-left: 5px;
+    z-index: 4;
+    position: absolute;
+}
+
+#container #titletext {
+    height: 60px;
+    width: 190px;
+    border: solid red 1px;
+    /*background-color: blue;*/
+    margin-top: 5px;
+    margin-left: 5px;
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+#container #ingredientstext {
+    height: 350px;
+    width: 115px;
+    border: solid red 1px;
+    /*background-color: blue;*/
+    margin-top: 5px;
+    margin-left: 200px;
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+#container #addingredient {
+    height: 30px;
+    width: 115px;
+    border: solid red 1px;
+    /*background-color: blue;*/
+    margin-top: 57px;
+    margin-left: 200px;
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+#container .ingredientBox {
+    height: 30px;
+    width: 115px;
+    border: solid red 1px;
+    /*background-color: blue;*/
+    /*margin-top: 60px;*/
+    margin-left: 200px;
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+#container #modify-glass {
+    height: 30px;
+    width: 30px;
+    border: solid red 1px;
+    /*background-color: blue;*/
+    margin-top: 80px;
+    margin-left: 35px;
+    z-index: 5;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+#container #modify-glass2 {
+    height: 30px;
+    width: 30px;
+    border: solid red 1px;
+    /*background-color: blue;*/
+    margin-top: 80px;
+    margin-left: 135px;
+    z-index: 5;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+#container #actionbox {
+    height: 120px;
+    width: 250px;
+    border: solid red 1px;
+    /*background-color: blue;*/
+    margin-top: 150px;
+    margin-left: 35px;
+    z-index: 6;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    display: none;
+}
+
+#container2 #actionbox {
+    height: 140px;
+    width: 250px;
+    border: solid red 1px;
+    /*background-color: blue;*/
+    margin-top: 130px;
+    margin-left: 35px;
+    z-index: 6;
+    position: absolute;
+    /*text-align: center;
+    /*vertical-align: middle;
+    line-height: 120px;
+    /*display:none;*/
+}
+
+.actionbox {
+    height: 170px;
+    width: 250px;
+    border: solid red 1px;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 35px;
+    z-index: 99;
+    position: absolute;
+    /*text-align: center;
+    /*vertical-align: middle;
+    line-height: 120px;
+    /*display:none;*/
+}
+
+#newIngredient #header{
+    /* Add font settings */
+    text-align: center;
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+
+#newIngredient .inputField{
+    width: 150px;
+    padding: 1px;
+    border: solid 1px #dcdcdc;
+    margin: 1px;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+#newIngredient .inputField:focus{
+    border: 1px solid #555;
+}
+
+#newIngredient #inputName{
+    width: 100%;
+}
+
+#newIngredient #inputColor{
+    width: 100%;
+}
+
+#newIngredient #displayAmount{
+    width: 100%;
+}
+
+#newIngredient #displayAmount #amountValue {
+    width: 30px;
+    text-align: right;
+    padding: 1px;
+    border: solid 1px #dcdcdc;
+    margin: 1px;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+#newIngredient #displayAmount #amountValue:focus {
+    border: 1px solid #555;
+}
+
+#newIngredient #inputAmount{
+    margin-left: 15px;
+    width: 100%;
+}
+
+#newIngredient #submit{
+    border: solid 1px black;
+    padding: 3px;
+    margin-left: 65px;
+    float: left;
+}
+
+#newIngredient #cancel{
+    border: solid 1px black;
+    padding: 3px;
+    margin-right: 65px;
+    float: right;
+}
+

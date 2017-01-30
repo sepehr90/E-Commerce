@@ -1,0 +1,5 @@
+Mobil
+Bredd: 320px
+Höjd: 400 px
+
+Sortering efter pris, populärt, alfabetsordning

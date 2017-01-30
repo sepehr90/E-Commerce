@@ -1,0 +1,93 @@
+<head>
+    <meta name="viewport" content="initial-scale=1">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.tokenize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js"></script>
+    <script src="javascript/drinkGenerator.js"></script>
+    <script src="javascript/searchResults.js"></script>
+    <script src="javascript/client.js"></script>
+    <script src="javascript/sidebar.js"></script>
+    <script src="javascript/fixed_header.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="style/jquery.tokenize.css"/>
+    <link rel="stylesheet" type="text/css" href="style/sidebar.css"/>
+    <title>GetDrank!</title>
+</head>
+<body>
+<div class="container">
+    <div id="sidebar">
+        <ul>
+            <li><a href="./login"></a>
+            <li id="loginDiv"><a href="/login">Login</a></li>
+            <li> <div id="loggedinDiv">Logged in as: <a id="logId"></a></div></li>
+            <li id="logoutDiv"><a href="">Log Out</a></li>
+            <li><div id="profileDiv"><a href="/userProfile">Profile</a></div></li>
+            <li><div id="createAccountDiv"><a href="/createAccount"> Create Account</a></div></li>
+            </li>
+            <li><div id="createDrink"><a href="./createDrink">Create Drink</a></div></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="swipe-area"></div>
+        <div class="content">
+            <div class="header">
+                <div id="logo-div">
+                    <img id="logo" src="./images/logotype.png">
+                    <a href="./images/loving-heart-shape.svg"></a>
+                </div>
+                <div id="fixed-header">
+                    <form id='searchDrink'>
+                        <div class="searchWrapper">
+                            <a href="#" data-toggle=".container" id="sidebar-toggle">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </a>
+                            <select id="tokenize" class="input" multiple="multiple" class="tokenize-sample">
+                                <option value="1">Anna</option>
+                            </select>
+                            <script type="text/javascript">
+                                $(document).ready(function(){
+                                    $('#tokenize').tokenize();
+                                });
+                            </script>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="drinkWrapper">
+                <div id="spinner">
+                    <img src="images/spinner.svg">
+                </div>
+                <div class='drinkContainer'></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var userNameObj = sessionStorage.getItem('userName');
+        $('#logId').text(sessionStorage.getItem('userName'));
+
+        if(userNameObj != null) {
+            $("#createAccountDiv").addClass('hide');
+            $("#loginDiv").addClass('hide');
+        }
+        if(userNameObj == null  || userNameObj == ""){
+
+            $("#logoutDiv").addClass('hide');
+            $("#profileDiv").addClass('hide');
+            $("#loggedinDiv").addClass('hide');
+            $("#createDrink").addClass('hide');
+        }
+
+
+    });
+</script>
+
+</body>

@@ -1,0 +1,321 @@
+#container {
+    margin-top: 10px;
+    height: 400px;
+    width: 320px;
+    border-radius: 20px;
+    position: relative;
+    float: left;
+    font-size: 12px;
+    font-family: 'Short Stack', cursive;
+    box-shadow: 0px 1px 5px #939393;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#container:hover{
+    cursor: default;
+}
+
+.canvas-container {
+    position: absolute;
+}
+
+#cnvs {
+    height: 400px;
+    width: 320px;
+    /*border: solid green 1px;
+    margin: 0 auto;*/
+    z-index: 1;
+    position: absolute;
+}
+
+.button-extras {
+    height: 30px;
+    margin-top: 355px;
+    z-index: 4;
+    position:absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    background: transparent -moz-linear-gradient(center top , #E0D6EA, #D9C3EF) repeat scroll 0% 0%;
+}
+
+.button-extras:hover {
+    background: transparent -moz-linear-gradient(center top , #CEADEF, #A07BC3) repeat scroll 0% 0%;
+}
+
+#button-effects {
+    margin-left: 5px;
+}
+
+#button-accessories {
+    width: 110px;
+    margin-left: 85px;
+}
+
+#tempbox {
+    height: 280px;
+    width: 190px;
+    margin-top: 70px;
+    margin-left: 5px;
+    z-index: 4;
+    position: absolute;
+}
+
+#titletext {
+    height: 60px;
+    width: 190px;
+    margin-top: 5px;
+    margin-left: 5px;
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+#ingredientstext {
+    height: 350px;
+    width: 115px;
+    margin-top: 5px;
+    margin-left: 200px;
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+#addingredient {
+    height: 30px;
+    width: 115px;
+    margin-top: 57px;
+    margin-left: 190px;
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    background: transparent -moz-linear-gradient(center top , #E0D6EA, #D9C3EF) repeat scroll 0% 0%;
+}
+
+#addingredient:hover {
+    background: transparent -moz-linear-gradient(center top , #CEADEF, #A07BC3) repeat scroll 0% 0%;
+}
+
+#container .ingredientBox {
+    height: 30px;
+    width: 115px;
+    margin-left: 200px;
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+.button-changeGlass {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    /*background-color: blue;
+    margin-top: 75px;
+    margin-left: 30px;
+    z-index: 5;*/
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    z-index: 5;
+    background: transparent -moz-linear-gradient(center top , #E0D6EA, #D9C3EF) repeat scroll 0% 0%;
+}
+
+.button-changeGlass:hover {
+    background: transparent -moz-linear-gradient(center top , #CEADEF, #A07BC3) repeat scroll 0% 0%;
+}
+
+
+#modify-glass {
+    /*border: solid red 1px;
+    background-color: blue;*/
+    margin-top: 75px;
+    margin-left: 30px;
+}
+
+#modify-glass2 {
+    margin-top: 75px;
+    margin-left: 140px;
+}
+
+#actionbox {
+    height: 120px;
+    width: 250px;
+    margin-top: 150px;
+    margin-left: 35px;
+    z-index: 6;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    display: none;
+}
+
+#container2 #actionbox {
+    height: 140px;
+    width: 250px;
+    /*background-color: blue;*/
+    margin-top: 130px;
+    margin-left: 35px;
+    z-index: 6;
+    position: absolute;
+    /*text-align: center;
+    /*vertical-align: middle;
+    line-height: 120px;
+    /*display:none;*/
+}
+
+.actionbox {
+    width: 250px;
+    /*border: solid red 1px;*/
+    background: #EFE6F0;
+    margin-top: 100px;
+    margin-left: 35px;
+    z-index: 99;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px #939393;
+    padding: 5px 5px 5px 5px;
+    /*text-align: center;
+    /*vertical-align: middle;
+    line-height: 120px;
+    /*display:none;*/
+}
+
+#newIngredient {
+    height: 170px;
+}
+
+#newIngredient #header{
+    /* Add font settings */
+    text-align: center;
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+
+.boxheader{
+    /* Add font settings */
+    text-align: center;
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+
+#newIngredient .inputField{
+    width: 150px;
+    padding: 1px;
+    border: solid 1px #dcdcdc;
+    margin: 1px;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+#newIngredient .inputField:focus{
+    border: 1px solid #555;
+}
+
+#newIngredient #inputName{
+    width: 100%;
+}
+
+#newIngredient #inputColor{
+    width: 100%;
+}
+
+#newIngredient #displayAmount{
+    width: 100%;
+}
+
+#newIngredient #displayAmount #amountValue {
+    width: 30px;
+    text-align: right;
+    padding: 1px;
+    border: solid 1px #dcdcdc;
+    margin: 1px;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+#newIngredient #displayAmount #amountValue:focus {
+    border: 1px solid #555;
+}
+
+#newIngredient #inputAmount{
+    margin-left: 15px;
+    width: 100%;
+}
+
+#newIngredient #submit{
+    background:#BEEFAD;
+    padding: 3px 10px 3px 10px;
+    margin-left: 55px;
+    float: left;
+}
+
+#newIngredient #submit:hover {
+    background:#A6CE99;
+}
+
+#newIngredient #cancel{
+    background:#FF7676;
+    padding: 3px 10px 3px 10px;
+    margin-right: 55px;
+    float: right;
+}
+
+#newIngredient #cancel:hover {
+    background: #D45A5A;
+}
+
+#editTitle{
+    height: 100px;
+}
+
+#editTitle .inputField{
+    width: 150px;
+    padding: 1px;
+    border: solid 1px #dcdcdc;
+    margin: 1px;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+#editTitle .inputField:focus{
+    border: 1px solid #555;
+}
+
+#editTitle #inputTitle {
+    margin-left: 48px;
+    padding: 1px;
+}
+
+#editTitle #submitTitle{
+    border: solid 1px black;
+    padding: 3px;
+    margin-left: 65px;
+    margin-top: 10px;
+    float: left;
+}
+
+#editTitle #cancelTitle{
+    border: solid 1px black;
+    padding: 3px;
+    margin-right: 65px;
+    margin-top: 10px;
+    float: right;
+}

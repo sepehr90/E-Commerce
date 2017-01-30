@@ -1,0 +1,26 @@
+{
+  "name": "getdrank",
+  "version": "1.0.0",
+  "description": "Trying to deploy heroku",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinotrainer/getDrank.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dinotrainer/getDrank/issues"
+  },
+  "homepage": "https://github.com/dinotrainer/getDrank#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongodb": "^2.1.6",
+    "node": "0.0.0",
+    "socket.io": "^1.4.5"
+  }
+}
